@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"math"
 )
 
@@ -78,33 +77,19 @@ func enums(){
 	fmt.Println(b,kb,mb,gb,tb)
 }
 
-func readFile(){
-	const path  ="abc.txt"
-	contents,err:=ioutil.ReadFile(path)
-	if err!=nil{
-		fmt.Println(err)
-	}else {
-		fmt.Println(contents)
-	}
 
-	//or
-	if contents,err:=ioutil.ReadFile(path);err!=nil{
-		fmt.Println()
-	}else {
-		fmt.Println(contents)
-	}
-}
+
 
 
 func main() {
-	fmt.Println("Hello World!")
-	variableZeroValue()
-	variableInitalValue()
-	variableTypeDeduction()
-	variableShorter()
-	fmt.Println(n1, n2, n3)
-	euler()
-	triangle()
-	enums()
+	//fmt.Println("Hello World!")
+	//variableZeroValue()
+	//variableInitalValue()
+	//variableTypeDeduction()
+	//variableShorter()
+	//fmt.Println(n1, n2, n3)
+	//euler()
+	//triangle()
+	//enums()
 	readFile()
 }
