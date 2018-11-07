@@ -77,8 +77,13 @@ func enums(){
 	fmt.Println(b,kb,mb,gb,tb)
 }
 
+func swap(a,b *int){
+	*a,*b=*b,*a
+}
 
-
+func swapwithoutpointer(a,b int)(int ,int ){
+	return b,a
+}
 
 
 func main() {
@@ -91,5 +96,9 @@ func main() {
 	//euler()
 	//triangle()
 	//enums()
-	readFile()
+	//readFile()
+	a:=1
+	b:=5
+	swap(&a,&b)
+	fmt.Println(a,b)
 }
