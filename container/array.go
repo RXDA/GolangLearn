@@ -16,9 +16,6 @@ func printArray2(arr *[5]int) {
 	arr[0] = 100
 }
 
-
-
-
 func main() {
 	var arr1 [5]int
 	arr2 := [3]int{1, 2, 3}

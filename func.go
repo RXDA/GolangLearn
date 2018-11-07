@@ -40,7 +40,7 @@ func pow(a, b int) int {
 	return int(math.Pow(float64(a), float64(b)))
 }
 
-func sum(values ... int) int {
+func sum(values ...int) int {
 	sum := 0
 	for i := range values {
 		sum += values[i]
@@ -58,5 +58,5 @@ func main() {
 		func(a, b int) int {
 			return int(math.Pow(float64(a), float64(b)))
 		}, 3, 4))
-	fmt.Println(sum(1,2,3,4,5,6,6,7))
+	fmt.Println(sum(1, 2, 3, 4, 5, 6, 6, 7))
 }

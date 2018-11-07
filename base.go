@@ -7,6 +7,7 @@ import (
 
 //包内可用
 var number = 3
+
 //number2:=3
 var (
 	n1     = 3
@@ -46,45 +47,44 @@ func triangle() {
 	var x, y float64 = 3, 4
 	z := math.Sqrt(x*x + y*y)
 
-	fmt.Println(c,z)
+	fmt.Println(c, z)
 }
 
 func consts() {
 	const filename = "abc.txt"
-	const a, b  = 3, 4
-	z := math.Sqrt(a*a+b*b)
+	const a, b = 3, 4
+	z := math.Sqrt(a*a + b*b)
 	fmt.Println(z)
 }
 
-func enums(){
-	const(
-		cpp=iota
+func enums() {
+	const (
+		cpp = iota
 		_
 		java
 		python
 		C
 	)
 
-	const(
-		b=1<<(10*iota)
+	const (
+		b = 1 << (10 * iota)
 		kb
 		mb
 		gb
 		tb
 	)
 
-	fmt.Println(cpp,java,python,C)
-	fmt.Println(b,kb,mb,gb,tb)
+	fmt.Println(cpp, java, python, C)
+	fmt.Println(b, kb, mb, gb, tb)
 }
 
-func swap(a,b *int){
-	*a,*b=*b,*a
+func swap(a, b *int) {
+	*a, *b = *b, *a
 }
 
-func swapwithoutpointer(a,b int)(int ,int ){
-	return b,a
+func swapwithoutpointer(a, b int) (int, int) {
+	return b, a
 }
-
 
 func main() {
 	//fmt.Println("Hello World!")
@@ -97,8 +97,8 @@ func main() {
 	//triangle()
 	//enums()
 	//readFile()
-	a:=1
-	b:=5
-	swap(&a,&b)
-	fmt.Println(a,b)
+	a := 1
+	b := 5
+	swap(&a, &b)
+	fmt.Println(a, b)
 }
